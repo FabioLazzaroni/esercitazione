@@ -1,0 +1,36 @@
+
+
+ 
+<div *ngFor="let alert of alerts" class="This is a secondary alert" role="alert">
+  <ngb-alert [type]="alert.type" (closed)="close(alert)"> <h4 class="alert-heading">Sconti solo per te!!!</h4>
+  <p>Iscrivi alla nostra newsletter e avrai il 10% di sconto sul tuo primo ordine!!!!</p>
+  <hr>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Indirizzo email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <button type="button" class="btn btn-dark">Iscriviti</button></ngb-alert>
+</div>
+
+<div class="container">
+  <div class="card">
+    <img routerLink='/rossetti' routerLinkActive="active" src="https://yourmakeup.maybelline.it/wp-content/uploads/2017/11/PowerBoss_Step3_Facebook.jpg">
+    <div class="card__head">Rossetti</div>
+  </div>
+  <div class="card">
+    <img routerLink='/eyebrow' routerLinkActive="active" src="https://www.ollysecret.com/wp-content/uploads/2018/10/make-up-occhi.jpg">
+    <div class="card__head">Mascara</div>
+  </div>
+  <div class="card">
+    <img src="https://images.kikocosmetics.com/mediaObject/2020/info/PDP/categories/Makeup-Nails-3/original/Makeup-Nails-3.jpg">
+    <div class="card__head">Smalto</div>
+  </div>
+  <div class="card">
+    <img routerLink='/bronzer' routerLinkActive="active"  src="https://xberry.it/image/cache/catalog/boss_blog/fondotinta-990x637.jpg">
+    <div class="card__head">Fondotinta</div>
+  </div>
+  <div class="card">
+    <img src="https://images.glamour.it/wp-content/uploads/2018/08/1533114224_visocreme.jpg">
+    <div class="card__head">Crema Viso</div>
+  </div>
+</div>

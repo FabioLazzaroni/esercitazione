@@ -1,0 +1,24 @@
+<div class="container ml-5">
+    <div class="container mt-5 ml-5">
+      <div class="row">
+        <div *ngFor="let item of rossetti | slice:11:24">
+          <div class="hero-container">
+            <div class="main-container">
+              <div class="poster-container">
+                <a href="#"><img [src]="item.image_link" alt="" class="poster" /></a>
+              </div>
+              <div class="ticket-container">
+                <div class="ticket__content">
+                  <h4 class="ticket__movie-title">{{item.name}} </h4>
+                  <p class="ticket__movie-slogan">{{item.brand}}</p>
+                  <p class="ticket__current-price">{{item.price}}€</p>
+                  <button [routerLink]="['/prodotti',item.id]" class="ticket__buy-btn">Dettagli</button>
+                  <button class="ticket__buy-btn1">Acquista</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
